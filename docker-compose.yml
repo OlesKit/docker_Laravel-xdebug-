@@ -27,7 +27,7 @@ services:
     # privileged: true # Privileged mode could be required to run this container under Windows
    
   php:
-    image: php-xdebug-custom
+    build: .
     volumes:
       - ./laravel:/var/www/myapp
       - ./laravel/site.ini:/usr/local/etc/php/php.ini
